@@ -24,7 +24,7 @@ export const Filters: FC<Props> = ({ className }) => {
   const [, setPageQuery] = useFiltersQuery();
 
   const isLargeDevice = useMediaQuery('only screen and (min-width : 768px)');
-  const [modalIsVisible, setModalIsVisible] = useState(true);
+  const [modalIsVisible, setModalIsVisible] = useState(false);
 
   const { meta } = useAppSelector(selectFlatsData);
   const { filtersData } = useAppSelector(selectFiltersData);
